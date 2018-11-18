@@ -1,0 +1,24 @@
+/* nav bar  */
+.ernestNav{
+  display: inline-block;
+  height: 100vh;
+  position: absolute;
+}
+.ernestNav ul{
+  list-style: none;
+}
+.ernestNav ul li{
+  color: #adad85;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.ernestNav ul li:hover{
+ color: #ADADBB;
+}
+
+.bottomNav{
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
+}
