@@ -1,18 +1,21 @@
+body{
+  font-family: 'Aldrich', sans-serif;
+  color: #adad85;
+}
 /* nav bar  */
-.ernestNav{
+#ernestNav{
   display: inline-block;
   height: 100vh;
+  position:fixed;
 }
-.ernestNav ul{
+#ernestNav ul{
   list-style: none;
 }
-.ernestNav ul li{
-  color: #adad85;
-  font-family: 'Aldrich', sans-serif;
+#ernestNav ul li{
   font-size: 15px;
   margin-top: 10px;
 }
-.ernestNav ul li:hover{
+#ernestNav ul li:hover{
  color: #ADADBB;
 }
 
@@ -20,4 +23,11 @@
   vertical-align: bottom;
   position: absolute;
   bottom: 0;
+}
+#merch button{
+  background-color: white;
+  border: 1px dotted #adad85;
+  border-radius: 10px;
+  color:#adad85;
+  padding-top: 1px;
 }
