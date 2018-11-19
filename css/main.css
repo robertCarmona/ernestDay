@@ -2,7 +2,6 @@
 .ernestNav{
   display: inline-block;
   height: 100vh;
-  position: absolute;
 }
 .ernestNav ul{
   list-style: none;
