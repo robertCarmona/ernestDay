@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ernest Day</title>
+		<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<!-- animation css file -->
@@ -49,15 +51,13 @@
 
 		<!-- Merchandise  -->
 				<div class = "col-10 ml-auto" id="merch">
-					<div class = "row mx-auto">
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
-						<merchandise></merchandise>
+					<div class = "row mx-auto" id="product">
+						<!-- <merchandise
+						v-for = "cloths in clothing"
+						v-bind:mImg = "cloths.mImg"
+						v-bind:name = "cloths.name"
+						v-bind:price = "cloths.price"
+						></merchandise> -->
 					</div>
 				</div>
 			</div>
@@ -69,6 +69,21 @@
 
 
 <!-- Scripts -->
+		<!-- firebase -->
+		<script>
+			// Initialize Firebase
+			var config = {
+			apiKey: "AIzaSyDEmXBofqYmZ1khP-U8ZPyi2HWAaEN4KAI",
+			authDomain: "ernestwebsite.firebaseapp.com",
+			databaseURL: "https://ernestwebsite.firebaseio.com",
+			projectId: "ernestwebsite",
+			storageBucket: "ernestwebsite.appspot.com",
+			messagingSenderId: "804644226910"
+			};
+			firebase.initializeApp(config);
+			const db =firebase.firestore();
+			db.settings({timestampsInSnapshots: true });
+		</script>
 		<!-- jquery uncompressed-->
 		<script src="http://code.jquery.com/jquery-3.3.1.js"
 		  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
